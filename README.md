@@ -24,3 +24,9 @@ This project was built using the following front-end technologies:
 
 - HTML
 - CSS
+
+## DOM Tree
+
+DOM Tree is also visible **[here](https://portfol-io-delta.vercel.app/dom_tree/tree.html)**.
+
+![DOM Tree](https://i.ibb.co/D7CKBqB/dom-tree.png)
