@@ -69,10 +69,17 @@ button {
 }
 
 nav {
+    position: fixed;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    background-color: #F5F9FF88;
+    backdrop-filter: blur(6px);
+    z-index: 100;
 }
 nav #avatar {
     width: 40px;
@@ -99,8 +106,10 @@ nav #avatar {
     text-align: right;
     right: 0;
     width: 100%;
+    margin-top: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
+    border-radius: 8px;
     background-color: #FFF;
 }
 
@@ -168,6 +177,8 @@ nav button {
     align-items: center;
     text-align: center;
     gap: 30px;
+
+    margin-top: 10rem;
 }
 #hero h1 {
     font-size: 46px;
@@ -329,6 +340,9 @@ footer hr {
 
 /* For tablets (portrait and landscape) */
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
+    .mobile {
+        display: none !important;
+    }
     .left {
         gap: 35px;
         width: 100%;
@@ -367,6 +381,9 @@ footer hr {
 
 /* For desktops */
 @media only screen and (min-width: 1024px) {
+    .mobile {
+        display: none !important;
+    }
     nav button {
         display: block;
     }
