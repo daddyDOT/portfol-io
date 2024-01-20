@@ -273,6 +273,17 @@ footer hr {
 
 /* For tablets (portrait and landscape) */
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
+    .left {
+        gap: 35px;
+        width: 100%;
+    }
+    .left h4 {
+        display: block;
+    }
+    #hamburger {
+        display: none;
+    }
+
     #hero h1 {
         font-size: 60px;
         letter-spacing: -2px;
@@ -291,6 +302,10 @@ footer hr {
     }
     #main p {
         font-size: 17px;
+        width: 90%;
+    }
+    #main .top p {
+        width: 100%;
     }
 }
 
