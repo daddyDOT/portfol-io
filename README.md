@@ -13,7 +13,7 @@ Here you can find information about the project, how to run it, and what it was 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your_username/your_repository.git
+   git clone https://github.com/daddyDOT/portfol-io.git
    ```
 
 2. Open the `index.html` file in your web browser.
