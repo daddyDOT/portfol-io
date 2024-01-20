@@ -10,23 +10,33 @@
     <div class="wrapper" id="landing">
         <nav>
             <div class="left">
-                <div class="logo">
-                    <img src="assets/icons/antarctica.svg" alt="logo" id="avatar">
-                    <h3>Portfol<span>.io</span></h3>
-                </div>
-
-                <h4>About me</h4>
-                <h4>Projects</h4>
-                <h4>Contact and copyright</h4>
+                <a href="/">
+                    <div class="logo">
+                        <img src="assets/icons/antarctica.svg" alt="logo" id="avatar">
+                        <h3>Portfol<span>.io</span></h3>
+                    </div>
+                </a>
+                <a href="#about"><h4>About me</h4></a>
+                <a href="#projects"><h4>Projects</h4></a>
+                <a href="#footer"><h4>Contact and copyright</h4></a>
             </div>
-            <button>Check my socials</button>
-            <img src="assets/icons/menu.svg" alt="menu" class="icon small" id="hamburger">
+            <a href="https://www.github.com/daddyDOT/portfolio-project"><button>Portfolio repository</button></a>
+            <div>
+                <input type="checkbox" id="hamburger">
+                <div id="dropdown">
+                    <div class="list">
+                        <a href="#about"><h4>About me</h4></a>
+                        <a href="#projects"><h4>Projects</h4></a>
+                        <a href="#footer"><h4>Contact and copyright</h4></a>
+                    </div>
+                </div>
+            </div>
         </nav>
 
         <div id="hero">
             <h1>My portfolio!</h1>
             <p>This portfolio was created as a project for UUIT - Uvod u IT (HTML/CSS)</p>
-            <button>Go to the projects section</button>
+            <a href="#projects"><button>Go to the projects section</button></a>
             <p id="source">github.com/daddyDOT/portfolio-project</p>
         </div>
 
@@ -35,7 +45,7 @@
         </div>
     </div>
     
-    <div class="wrapper" id="main">
+    <div class="wrapper main" id="about">
         <div class="top">
             <hr class="line">
             <h2>About me</h2>
@@ -61,7 +71,7 @@
         </div>
     </div>
 
-    <div class="wrapper" id="main">
+    <div class="wrapper main" id="projects">
         <div class="top">
             <hr class="line">
             <h2>Projects</h2>
@@ -83,21 +93,29 @@
         </div>
     </div>
 
-    <footer>
+    <footer id="footer">
         <p>This portfolio was created as a project for UUIT (HTML/CSS)</p>
         <div class="socials">
-            <div class="item">
-                <img src="assets/icons/github.svg" alt="github" class="icon tiny">
-            </div>
-            <div class="item">
-                <img src="assets/icons/facebok.svg" alt="facebok" class="icon tiny">
-            </div>
-            <div class="item">
-                <img src="assets/icons/linkedin.svg" alt="linkedin" class="icon tiny">
-            </div>
-            <div class="item">
-                <img src="assets/icons/world.svg" alt="website" class="icon tiny">
-            </div>
+            <a href="https://www.github.com/daddyDOT">
+                <div class="item">
+                    <img src="assets/icons/github.svg" alt="github" class="icon tiny">
+                </div>
+            </a>
+            <a href="https://www.facebook.com/daddyBALKANSAMP">
+                <div class="item">
+                    <img src="assets/icons/facebok.svg" alt="facebok" class="icon tiny">
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/ahmed-spahi%C4%87-0b5016260/">
+                <div class="item">
+                    <img src="assets/icons/linkedin.svg" alt="linkedin" class="icon tiny">
+                </div>
+            </a>
+            <a href="https://daddydot.github.io/">
+                <div class="item">
+                    <img src="assets/icons/world.svg" alt="website" class="icon tiny">
+                </div>
+            </a>
         </div>
         <hr>
         <p class="copyright">© Copyright 2024, daddyDOT<br><br><span>♥</span> to ClarityUI for some UI concepts</p>

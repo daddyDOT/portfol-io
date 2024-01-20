@@ -6,6 +6,8 @@ html {
     font-style: normal;
     font-variation-settings:
         "slnt" 0;
+    
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,6 +24,13 @@ hr {
     border-style: solid;
     border-width: 1px;
     border-bottom-width: 0px;
+}
+a {
+    text-decoration: none;
+    color: #0F172A;
+}
+button {
+    cursor: pointer;
 }
 
 .wrapper {
@@ -69,6 +78,54 @@ nav #avatar {
     width: 40px;
     height: 40px;
 }
+
+#hamburger {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 0.1rem;
+    border-radius: 0.5rem;
+    background-image: url("../assets/icons/menu.svg");
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+  }
+  
+#dropdown {
+    position: absolute;
+    text-align: right;
+    right: 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #FFF;
+}
+
+#dropdown .list {
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#dropdown h4 {
+    font-weight: 400;
+}
+
+#hamburger:checked + #dropdown {
+    display: block;
+}
+
+#hamburger:not(:checked) ~ #dropdown {
+    display: none;
+}
+
+
 .left {
     display: flex;
     justify-content: space-between;
@@ -145,7 +202,7 @@ nav button {
     width: 100%;
 }
 
-#main {
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,20 +210,20 @@ nav button {
 
     text-align: justify;
 }
-#main .top {
+.main .top {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
 }
-#main .top p {
+.main .top p {
     margin-top: -5px;
 }
-#main .top h2 {
+.main .top h2 {
     font-size: 30px;
     font-weight: bolder;
 }
-#main p {
+.main p {
     line-height: 20pt;
     font-weight: 500;
 }
@@ -297,14 +354,14 @@ footer hr {
         content:url('../assets/tablet.svg');
     }
 
-    #main .top h2 {
+    .main .top h2 {
         font-size: 35px;
     }
-    #main p {
+    .main p {
         font-size: 17px;
         width: 90%;
     }
-    #main .top p {
+    .main .top p {
         width: 100%;
     }
 }
@@ -338,20 +395,20 @@ footer hr {
         content:url('../assets/laptop.svg');
     }
 
-    #main .top h2 {
+    .main .top h2 {
         font-size: 50px;
     }
-    #main .top p {
+    .main .top p {
         width: 100%;
     }
-    #main p {
+    .main p {
         width: 60%;
         text-align: center;
     }
-    #main hr {
+    .main hr {
         width: 80%;
     }
-    #main .line {
+    .main .line {
         width: 50px;
     }
 
