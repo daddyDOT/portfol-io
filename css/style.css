@@ -76,8 +76,12 @@ nav #avatar {
     gap: 15px;
 }
 .left h3 {
-    font-weight: 600;
+    font-weight: 800;
     font-size: 20px;
+}
+.left span {
+    font-weight: 500;
+    font-size: 15px;
 }
 
 #hero {
