@@ -95,9 +95,9 @@ nav #avatar {
     font-size: 46px;
 }
 #hero p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 30px;
     color: #212139;
 }
 #hero button {
@@ -233,4 +233,27 @@ footer hr {
 }
 .socials img {
     filter: invert(1);
+}
+
+/* For tablets (portrait and landscape) */
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    #hero h1 {
+        font-size: 60px;
+        letter-spacing: -2px;
+    }
+    #hero p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #phone img {
+        content:url('../assets/tablet.svg');
+    }
+
+    #main .top h2 {
+        font-size: 35px;
+    }
+    #main p {
+        font-size: 17px;
+    }
 }
