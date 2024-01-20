@@ -130,7 +130,6 @@ nav #avatar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 70px;
 }
 .left .logo {
     display: flex;
@@ -370,6 +369,9 @@ footer hr {
 @media only screen and (min-width: 1024px) {
     nav button {
         display: block;
+    }
+    .left {
+        gap: 70px;
     }
     .left h4 {
         font-weight: 600;
